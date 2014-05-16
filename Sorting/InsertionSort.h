@@ -11,12 +11,12 @@ template <class T> void InsertionSort(T * arr, const unsigned int length){
 		for (unsigned int i = 1; i < length; i++){
 			for (unsigned int j = i; j > 0; j--){
 				if(arr[j-1] > arr[j]){
+					unsorted = 1;
 					temp = arr[j];
 					arr[j] = arr[j-1];
 					arr[j-1] = temp;
 				}
 			}
-			print(arr, length);
 		}
 	}
 }

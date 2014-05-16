@@ -3,7 +3,9 @@
 #ifndef SHELL_SORT
 #define SHELL_SORT
 
-template <class T> void ShellSort(T * arr, const unsigned int length);
+template <class T> void ShellSort(T * arr, const unsigned int length){
+	
+}
 
 #endif
 

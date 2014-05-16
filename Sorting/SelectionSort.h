@@ -8,6 +8,7 @@ template <class T> void SelectionSort(T * arr, const unsigned int length){
 	else {
 		T temp;
 		unsigned int min;
+
 		for (unsigned int i = 0; i < length; i++){
 			temp = arr[i];
 			min = i;
@@ -19,7 +20,6 @@ template <class T> void SelectionSort(T * arr, const unsigned int length){
 			}
 			arr[min] = arr[i];
 			arr[i] = temp;
-			print(arr, length);
 		}
 	}
 }
