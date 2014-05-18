@@ -5,7 +5,7 @@
 
 template <class T> unsigned int Partition(T * arr, const unsigned int length){
 	T temp;
-	unsigned int head = 0, rear = length - 1;
+	int head = 0, rear = length - 1;
 	temp = arr[head];
 	while (head < rear){
 		while (head < rear && arr[rear] >= temp)

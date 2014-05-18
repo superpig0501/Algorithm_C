@@ -8,3 +8,6 @@ template <class T> void print(const T * arr, const unsigned int length){
 }
 
 #endif
+
+/*You can insert this function to the sorting algorithm to print proceedings.
+ */

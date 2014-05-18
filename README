@@ -1,1 +1,5 @@
 This is a set for basic algorithms.
+The programming language is C/C++.
+
+There is a header file for each algorithm.
+The instructions and descriptions of algorithm are included in the corresponding header files.

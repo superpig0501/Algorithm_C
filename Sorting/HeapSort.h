@@ -48,7 +48,7 @@ template <class T> void HeapSort (T * arr, const unsigned int length){
  *The HEAP means for each node in the tree, the parent node always has a certain order with the children.
  *For instance, if any node's parent (if there is) is larger than the node itself, then, correspondingly,
  *any node's child(ren) (if there is/are) is(are) smaller than the node itself. With the first stage finished,
- *The largest node will appear in the root node of the tree, that is, the first element of the array.
+ *The largest node will appear in the root node of the tree, i.e., the first element of the array.
  *
  *the HEAP was think as unsorted. For second stage, swap the first with the last element of the unsorted,
  *and the unsorted part diminished from the backside. Then re-adjust the array with thinking it as a HEAP. 

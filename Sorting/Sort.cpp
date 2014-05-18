@@ -10,6 +10,7 @@
 #include "QuickSort.h"
 #include "HeapSort.h"
 #include "MergeSort.h"
+#include "ShellSort.h"
 
 const unsigned int Total = 10;
 
@@ -32,7 +33,8 @@ int main(){
 //	SelectionSort(t_int, Total);
 //	QuickSort(t_int, Total);
 //	HeapSort(t_int, Total);
-	MergeSort(t_int, Total);
+//	MergeSort(t_int, Total);
+	ShellSort(t_int, Total);
 
 	print(t_int, Total);
 //	print(t_double, Total);
