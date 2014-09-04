@@ -1,4 +1,4 @@
-#include "Print.h"
+//#include "Print.h"
 
 #ifndef BUBBLE_SORT
 #define BUBBLE_SORT
@@ -7,19 +7,19 @@ template <class T> void BubbleSort (T * arr, const int length){
 	if (length < 2);
 	else{
 		T temp;
-		int unsorted;
+		bool isSorted;
 
 		for (int i = 0; i < length; i++){
-			unsorted = 0;
+			isSorted = true;
 			for(int j = length; j > i; j--){
 				if (arr[j] < arr[j-1]){
-					unsorted = 1;
+					isSorted = false;
 					temp = arr[j];
 					arr[j] = arr[j-1];
 					arr[j-1] = temp;
 				}
 			}
-			if(0 == unsorted)
+			if(true == isSorted)
 				break;
 		}
 	}

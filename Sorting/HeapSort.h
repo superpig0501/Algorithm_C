@@ -1,4 +1,4 @@
-#include "Print.h"
+//#include "Print.h"
 
 #ifndef HEAP_SORT
 #define HEAP_SORT
@@ -27,7 +27,8 @@ template <class T> void HeapSort (T * arr, const unsigned int length){
 	else{	
 		for (int i = (length / 2) - 1; i >= 0; i--){
 			Adjust(arr, i, length);
-			// (length / 2) - 1 == index of maximum non-leaf node.
+			// Pre-sorting adjust. Time complexity = T((n/2)*log n) = O(n log n)
+			// ((length / 2) - 1) == index of maximum non-leaf node.
 		}
 		T temp;
 		for (i = length - 1; i > 0; i--){
@@ -35,6 +36,7 @@ template <class T> void HeapSort (T * arr, const unsigned int length){
 			arr[i] = arr[0];
 			arr[0] = temp;
 			Adjust(arr, 0, i);
+			//Post-sorted adjust.  Time complexity = T(log n) = O(log n)
 		}
 	}
 }

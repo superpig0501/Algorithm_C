@@ -1,5 +1,5 @@
-This is a set for basic algorithms.
+This is a set for basic algorithms.And this repository is for practising & learning purpose.
 The programming language is C/C++.
 
 There is a header file for each algorithm.
-The instructions and descriptions of algorithm are included in the corresponding header files.
+The instruction and description for certain algorithm is included as annotation in the corresponding header file.
